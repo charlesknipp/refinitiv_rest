@@ -92,7 +92,7 @@ class Session:
             "Authorization": "Token %s" % (self.token),
             "Content-Type": "application/json",
             "Accept-Charset": "UTF-8",
-            "Prefer": "respond-async",
+            "Prefer": "respond-async, wait=120",
         }
 
         # wait for the request to return a status code 200
